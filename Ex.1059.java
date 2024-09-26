@@ -1,16 +1,14 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.IOException;
+import java.util.Scanner;
 
-
-class Main {
-    public static void main(String[] args) {
-        int num;
-        num = 0;
-        do {
-            System.out.println(num);
-            num+=2;
-            
-        }while(num<=100);
+public class Main {
+        public static void main(String[] args) throws IOException {
+            int num=2;
+        
+            do {
+                System.out.printf("%d\n",num);
+                num+=2;
+                
+            }while(num<=100);
+        }
     }
-}

@@ -1,28 +1,27 @@
 
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.IOException;
+import java.util.Scanner;
 
+public class Main {
+        public static void main(String[] args) throws IOException {
+			Scanner ler = new Scanner (System.in);
 
-public class Main
-{
-	public static void main(String[] args) {
-	  String nome;
-        float salario,vendas,result;
-	  
-	  Scanner ler = new Scanner (System.in);
-	  
-	  nome = ler.next();
-        ler.nextLine();
-	  salario = ler.nextFloat();   
-	  vendas = ler.nextFloat();
-	  
-	  
-	  result = salario + (vendas/100 * 15);
-	  System.out.printf("TOTAL = R$ %.2f " , result); 
+			String nome;
+			double vendas,salario,total;
+	
+			nome = ler.next();
+			salario = ler.nextDouble();
+			vendas = ler.nextDouble();
+	
+			total = salario + (vendas/100 * 15);
+			
+			  System.out.printf("TOTAL = R$ %.2f\n", total );
+			  ler.close();
+			
+	  }
 	}
-}
+	 
 
 
 
